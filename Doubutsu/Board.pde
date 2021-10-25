@@ -21,6 +21,5 @@ void setup() {
     mArea[0].draw();
     mArea[1].draw();
     iArea.draw();
-    board.draw();
   }
 }
