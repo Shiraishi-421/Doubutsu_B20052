@@ -1,4 +1,7 @@
+
 class Board {
+  final int SQUARESIZE = 100;
+Board board;
   BaseArea bArea;
   InfoArea iArea;
   MochigomaArea[] mArea = new MochigomaArea[2];
@@ -9,11 +12,15 @@ class Board {
     mArea[0] = new MochigomaArea(0,0,1,4);
     mArea[1] = new MochigomaArea(5,0,1,4);
   }
-
+void setup() {
+  surface.setSize(6*SQUARESIZE, 4*SQUARESIZE);
+  board = new Board();
+}
   void draw(){
     bArea.draw();
     mArea[0].draw();
     mArea[1].draw();
     iArea.draw();
+    board.draw();
   }
 }
