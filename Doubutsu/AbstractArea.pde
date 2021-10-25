@@ -8,6 +8,7 @@ abstract class AbstractArea {
     this.posY = posY;
     this.yoko = yoko;
     this.tate = tate;
+    
   }
   abstract void draw();
 
