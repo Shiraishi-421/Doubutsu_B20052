@@ -11,6 +11,7 @@ class BaseArea extends AbstractArea {
         if (i==posX) fill(#c5ffc5);
         else if (i==posX+yoko-1) fill(#c5ffff);
         rect(i*SQUARESIZE, j*SQUARESIZE, SQUARESIZE, SQUARESIZE);
+        
       }
     }
   }
