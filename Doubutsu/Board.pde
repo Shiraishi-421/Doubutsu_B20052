@@ -22,7 +22,6 @@ void setup() {
     mArea[1].draw();
     iArea.draw();
   }
-}
 
 void select(int x, int y){
     AbstractKoma koma = komaList.getSelectedKoma();
@@ -32,3 +31,4 @@ void select(int x, int y){
       koma.kStat.selected=false;
     }
   }
+}
